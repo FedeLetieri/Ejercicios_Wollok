@@ -8,10 +8,10 @@ aporta el alimento
 es 30 + 20/2 = 40
 ● Cuando vuela gasta 20 fijos más 2 joules por km,
 ○ Ejemplo si tiene 30 de energía y vuela 3 km su nueva energía
-es: 30 - 20 - 2*3 = 4*/
+es: 30 - 20 - 2*3 = 4*//*Actualizado */
 
 object pepon{
-	var energia=30
+	var energia=35
 	
 	method comer(comida){
 		energia=energia + (comida.energiaQueAporta()/2)

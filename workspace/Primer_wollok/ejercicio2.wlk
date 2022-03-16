@@ -14,43 +14,41 @@ recordar este dato)*/
 
 object roque{
 	//Variables
-	var energia_pepita=100
-	var energia_pepon=100
-	var ave_elegida="pepita"
-	var cenas_pepita=0
-	var cenas_pepon=0
+	/*var energia_pepita=100
+	var energia_pepon=100*/
+	var aveElegida=pepita
 	
 	//Metodos
 	method elegir(ave){
-		ave_elegida=ave.me_eligieron()
-		return ave_elegida
+		aveElegida=ave
 	}
-	method alimentar(comida){	
-		if (ave_elegida == "pepita"){
-		energia_pepita = energia_pepita+ (comida.energiaQueAporta()/2)
-		cenas_pepita = cenas_pepita + 1
-		return cenas_pepita
-		}
-		else 
-		energia_pepon = energia_pepon + (comida.energiaQueAporta()/2)
-		cenas_pepon = cenas_pepon + 1
-		return cenas_pepon
-	}
-		
-}
-//******************************AVES******************************
-object pepita{
 	
-	method me_eligieron(){
-		return "pepita"
-	}
+	method alimentar(comida){	
+		aveElegida.comer(comida)
+}
 }
 
-object pepon{
-	
-	method me_eligieron(){
-		return "pepon"
+//******************************AVES******************************
+object pepita{
+	var energia=30
+	var cenas=0
+	method comer(comida){
+		
+		energia = energia + comida.energiaQueAporta()
+		cenas+=1 
 	}
+	
+	}
+	
+
+object pepon{
+	var energia=40
+	var cenas=0
+	method comer(comida){
+		energia = energia + comida.energiaQueAporta()
+		cenas+=1 
+	}
+	
 }
 
 //******************************COMIDAS******************************
