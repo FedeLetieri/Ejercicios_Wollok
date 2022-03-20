@@ -6,30 +6,44 @@ object galvan {
 		sueldo += valor	
 	}
 	method sueldoAcobrar(){
+		if (deuda > 0 ){
+			totalDinero=totalDinero-deuda
+			deuda=0
+		}
 		totalDinero+=sueldo
 		return totalDinero
 	}
 	
-	method gastarDinero(dineroGastado){
-		totalDinero=totalDinero-dineroGastado
-		if (totalDinero < 0) {deuda+=totalDinero
-		totalDinero=0}
+	method gastar(cantidad){
+		totalDinero=totalDinero-cantidad
+		if (totalDinero<0){
+			deuda+=-totalDinero
+			totalDinero=0
+		}
+	}
+	method dinero(){
+		return totalDinero
 	}
 	
-	
+	method deuda(){
+		return deuda
+	}
 }
 
 object baigorria{
 	var empanadasVendidas = 0
 	const cobroPorEmpanada = 15
+	var totalDinero=0
 	
 	method venderEmpanadas(cantidad){
 		empanadasVendidas+=cantidad
 	}
 	method sueldoAcobrar(){
-		return empanadasVendidas * cobroPorEmpanada
+		totalDinero=empanadasVendidas * cobroPorEmpanada
 		}
-	//method 	
+	method totalCobrado(){
+		return totalDinero
+	}	
 }
 
 object gimenez{
