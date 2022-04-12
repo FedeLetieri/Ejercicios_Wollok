@@ -9,3 +9,6 @@ Filer(predicate)// Devuelve lo que se filtra (Sublistas o SubConjuntos)
 All(predicate)//Si cumplen todos(TRUE OR FALSE)
 Any(predicate)//Si solo hay 1 que cumple(TRUE OR FALSE)
 find(predicate)//El primer objeto que cumpla ese predicado
+Un comando es un bloque que tiene un parametro, no devuelve nada, porque manda ordenes.
+transfomer recibe un parametro y devuelve otro objeto.
+predicate recibe un parametro y devuelve un booleano.
