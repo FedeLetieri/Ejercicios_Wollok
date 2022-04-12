@@ -1,0 +1,6 @@
+NOTAS IMPORTANES:
+ForEach(Comando)
+MAX(TRANSFORMER)//Te   devuelve el poder
+SUM(TRANSFORMER)
+MAP(TRANSFORMER)//Te devuelve el artefacto(otro Conjunto)// Siempre devuleve una lista
+Filer(predicate)// Devuelve lo que se filtra (listas o Conjuntos)
