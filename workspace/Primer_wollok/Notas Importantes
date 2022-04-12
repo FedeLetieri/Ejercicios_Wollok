@@ -1,5 +1,7 @@
 NOTAS IMPORTANES:
 ForEach(Comando)
+Para ejecutar las ordenes de abajo, en todos los elementos de una lista o conjunto.
+-----------------------------------------------------------------
 MAX(TRANSFORMER)//Te   devuelve el poder, los convierte a algo que se pueda comparar ej numeros.
 SUM(TRANSFORMER)//Te convierte los elementos en numeros. (con el transformer) 
 MAP(TRANSFORMER)//Te devuelve el artefacto(otro Conjunto)// Siempre devuleve una lista
