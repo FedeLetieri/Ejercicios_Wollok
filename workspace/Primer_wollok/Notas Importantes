@@ -14,3 +14,9 @@ transfomer recibe un parametro y devuelve otro objeto.
 predicate recibe un parametro y devuelve un booleano.
 ************************************************************************************************************
 Self.error('Mensaje de Error')
+Self.validarExtracion()
+assert.throwsException({})
+
+
+
+
