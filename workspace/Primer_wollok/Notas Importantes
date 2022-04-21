@@ -1,7 +1,7 @@
 NOTAS IMPORTANES:
 ForEach(Comando)
 Para ejecutar las ordenes de abajo, en todos los elementos de una lista o conjunto.
------------------------------------------------------------------
+************************************************************************************************************
 MAX(TRANSFORMER)//Te   devuelve el poder, los convierte a algo que se pueda comparar ej numeros.
 SUM(TRANSFORMER)//Te convierte los elementos en numeros. (con el transformer) 
 MAP(TRANSFORMER)//Te devuelve el artefacto(otro Conjunto)// Siempre devuleve una lista
@@ -12,3 +12,5 @@ find(predicate)//El primer objeto que cumpla ese predicado
 Un comando es un bloque que tiene un parametro, no devuelve nada, porque manda ordenes.
 transfomer recibe un parametro y devuelve otro objeto.
 predicate recibe un parametro y devuelve un booleano.
+************************************************************************************************************
+Self.error('Mensaje de Error')
